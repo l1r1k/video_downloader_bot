@@ -43,7 +43,7 @@ async def check_video_size(url: str) -> tuple[bool, str, str]:
         filesize = int(stdout_value)
     else:
         filesize = None
-    return filesize is not None and filesize < MAX_SIZE, stdout.decode(), stderror
+    return filesize is None or filesize < MAX_SIZE, stdout.decode(), stderror
 
 async def correct_video(path_to_video: str) -> tuple[str, str, str]:
     """

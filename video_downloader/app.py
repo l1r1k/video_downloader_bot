@@ -201,8 +201,8 @@ async def any_message_handler(message: Message) -> None:
                             path_to_video, stdout_download_video, strerror_download_video = await download_video_async(download_url, path_to_save, video_id, no_send_back_type)
                         logging.info(stdout_download_video)
                         logging.error(strerror_download_video)
-                        # if it's youtebe video and it's for sending back to user to telegram we correct it
-                        if ('youtube' in path_to_video or 'inst' in path_to_video) and not no_send_back_type:
+                        # If sending back video to user - correct video and audio with ffmpeg for better compatibility with Telegram
+                        if not no_send_back_type:
                             path_to_video, stdout_correct, stderror_correct = await correct_video(path_to_video)
                             logging.info(stdout_correct)
                             logging.error(stderror_correct)

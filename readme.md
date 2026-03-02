@@ -113,5 +113,3 @@ ffprobe -version
 - Пулреквесты и issue приветствуются.
 - Добавьте короткий `CONTRIBUTING.md`, если планируете активно принимать PR.
 - Распространяется по лицензии GNU General Public License v3.0
-
-***Конец README***

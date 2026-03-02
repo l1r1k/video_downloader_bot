@@ -1,0 +1,80 @@
+# Russian translations for PROJECT.
+# Copyright (C) 2026 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2026-03-02 14:19+0300\n"
+"PO-Revision-Date: 2026-02-26 16:48+0300\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: app.py:34
+msgid "Something went wrong...We send msg to admin, try later!"
+msgstr "Что-то пошло не так...Мы уже отправили сообщение администратору, попробуйте позже!"
+
+#: app.py:35
+#, python-brace-format
+msgid ""
+"Something went wrong at {error_situation} at time {date_and_time}. Check "
+"logs for more information!"
+msgstr ""
+"Что-то пошло не так в {error_situation} во время {date_and_time}. Посмотрите "
+"логи для подробной информации!"
+
+#: app.py:99
+#, python-brace-format
+msgid ""
+"Hello, {name}! This is app for downloading any video from TikTok and "
+"YouTube. Write down a url link to video for downloading!"
+msgstr ""
+"Привет, {name}! Это приложение для установки любых видео с TikTok и "
+"YouTube. Напиши url-ссылку на видео ниже для его установки!"
+
+#: app.py:119
+#, python-brace-format
+msgid ""
+"We would be able to get the {count_urls} URLs from your message. We're "
+"starting to download them..."
+msgstr ""
+"Мы смогли получить {count_urls} URL-адреса из вашего сообщения. Мы "
+"начинаем их загружать..."
+
+#: app.py:147
+#, python-brace-format
+msgid "{count_videos} video was downloaded!"
+msgstr "{count_videos} видео было скачано!"
+
+#: app.py:168
+msgid "Sending the videos!"
+msgstr "Отправляем видео!"
+
+#: app.py:188
+#, python-brace-format
+msgid ""
+"No urls! Nothing to download...For download write a url to video from "
+"available platforms ({available_platforms})!"
+msgstr ""
+"Нет URL-адресов! Скачивать нечего...Для скачивания введите URL-адрес "
+"видео с доступных платформ ({available_platforms})!"
+
+#: app.py:193
+msgid "For download video send a url here!"
+msgstr "Отправьте url для скачивания видео!"
+
+#~ msgid "We could get {count_urls} urls from your msg. Start downloading them..."
+#~ msgstr ""
+
+#~ msgid "Upload a videos!"
+#~ msgstr ""
+

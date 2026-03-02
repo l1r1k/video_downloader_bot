@@ -1,0 +1,73 @@
+# Chinese translations for PROJECT.
+# Copyright (C) 2026 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2026-03-02 14:19+0300\n"
+"PO-Revision-Date: 2026-02-26 16:53+0300\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh\n"
+"Language-Team: zh <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: app.py:34
+msgid "Something went wrong...We send msg to admin, try later!"
+msgstr "出了点问题。..我们发送味精给管理员,稍后再试!"
+
+#: app.py:35
+#, python-brace-format
+msgid ""
+"Something went wrong at {error_situation} at time {date_and_time}. Check "
+"logs for more information!"
+msgstr ""
+"{error_situation}在时间{date_and_time}出现问题。 检查"
+"日志以获取更多信息！"
+
+#: app.py:99
+#, python-brace-format
+msgid ""
+"Hello, {name}! This is app for downloading any video from TikTok and "
+"YouTube. Write down a url link to video for downloading!"
+msgstr "你好,{name}! 这是从TikTok下载任何视频的应用程序和 YouTube的。 写下一个url链接到视频下载!"
+
+#: app.py:119
+#, python-brace-format
+msgid ""
+"We would be able to get the {count_urls} URLs from your message. We're "
+"starting to download them..."
+msgstr "我们将能够从您的消息中获取 {count_urls} Url。 我们是开始下载它们。.."
+
+#: app.py:147
+#, python-brace-format
+msgid "{count_videos} video was downloaded!"
+msgstr "{count_videos} 视频下载！"
+
+#: app.py:168
+msgid "Sending the videos!"
+msgstr "发送视频！"
+
+#: app.py:188
+#, python-brace-format
+msgid ""
+"No urls! Nothing to download...For download write a url to video from "
+"available platforms ({available_platforms})!"
+msgstr "没有网址！ 没什么可下载的。..下载请写一个url到视频从可用平台（{available_platforms}）！"
+
+#: app.py:193
+msgid "For download video send a url here!"
+msgstr "下载视频发送一个网址在这里！"
+
+#~ msgid "We could get {count_urls} urls from your msg. Start downloading them..."
+#~ msgstr ""
+
+#~ msgid "Upload a videos!"
+#~ msgstr ""
+

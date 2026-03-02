@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-03-02 14:19+0300\n"
+"POT-Creation-Date: 2026-03-02 23:25+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,48 +17,53 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.18.0\n"
 
-#: app.py:34
-msgid "Something went wrong...We send msg to admin, try later!"
-msgstr ""
-
-#: app.py:35
-#, python-brace-format
-msgid ""
-"Something went wrong at {error_situation} at time {date_and_time}. Check "
-"logs for more information!"
-msgstr ""
-
-#: app.py:99
+#: app.py:130
 #, python-brace-format
 msgid ""
 "Hello, {name}! This is app for downloading any video from TikTok and "
 "YouTube. Write down a url link to video for downloading!"
 msgstr ""
 
-#: app.py:119
+#: app.py:154
 #, python-brace-format
 msgid ""
 "We would be able to get the {count_urls} URLs from your message. We're "
 "starting to download them..."
 msgstr ""
 
-#: app.py:147
+#: app.py:159 app.py:219
+msgid "Something went wrong...We send msg to admin, try later!"
+msgstr ""
+
+#: app.py:162 app.py:222 app.py:254
+#, python-brace-format
+msgid ""
+"Something went wrong at {error_situation} at time {date_and_time}. Check "
+"logs for more information!"
+msgstr ""
+
+#: app.py:190
+#, python-brace-format
+msgid "Video {video_id} is too big for sending back to you!"
+msgstr ""
+
+#: app.py:213
 #, python-brace-format
 msgid "{count_videos} video was downloaded!"
 msgstr ""
 
-#: app.py:168
+#: app.py:239
 msgid "Sending the videos!"
 msgstr ""
 
-#: app.py:188
+#: app.py:263
 #, python-brace-format
 msgid ""
 "No urls! Nothing to download...For download write a url to video from "
 "available platforms ({available_platforms})!"
 msgstr ""
 
-#: app.py:193
+#: app.py:268
 msgid "For download video send a url here!"
 msgstr ""
 

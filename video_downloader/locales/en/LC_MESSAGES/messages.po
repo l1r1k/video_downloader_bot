@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-03-02 14:19+0300\n"
+"POT-Creation-Date: 2026-03-02 23:25+0300\n"
 "PO-Revision-Date: 2026-02-26 16:47+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -18,11 +18,29 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.18.0\n"
 
-#: app.py:34
+#: app.py:130
+#, python-brace-format
+msgid ""
+"Hello, {name}! This is app for downloading any video from TikTok and "
+"YouTube. Write down a url link to video for downloading!"
+msgstr ""
+"Hello, {name}! This is app for downloading any video from TikTok and "
+"YouTube. Write down a url link to video for downloading!"
+
+#: app.py:154
+#, python-brace-format
+msgid ""
+"We would be able to get the {count_urls} URLs from your message. We're "
+"starting to download them..."
+msgstr ""
+"We would be able to get the {count_urls} URLs from your message. We're "
+"starting to download them..."
+
+#: app.py:159 app.py:219
 msgid "Something went wrong...We send msg to admin, try later!"
 msgstr "Something went wrong...We send msg to admin, try later!"
 
-#: app.py:35
+#: app.py:162 app.py:222 app.py:254
 #, python-brace-format
 msgid ""
 "Something went wrong at {error_situation} at time {date_and_time}. Check "
@@ -31,34 +49,21 @@ msgstr ""
 "Something went wrong at {error_situation} at time {date_and_time}. Check "
 "logs for more information!"
 
-#: app.py:99
+#: app.py:190
 #, python-brace-format
-msgid ""
-"Hello, {name}! This is app for downloading any video from TikTok and "
-"YouTube. Write down a url link to video for downloading!"
-msgstr ""
-"Hello, {name}! This is app for downloading any video from TikTok and "
-"YouTube. Write down a url link to video for downloading!"
+msgid "Video {video_id} is too big for sending back to you!"
+msgstr "Video {video_id} is too big for sending back to you!"
 
-#: app.py:119
-#, python-brace-format
-msgid ""
-"We would be able to get the {count_urls} URLs from your message. We're "
-"starting to download them..."
-msgstr ""
-"We would be able to get the {count_urls} URLs from your message. We're "
-"starting to download them..."
-
-#: app.py:147
+#: app.py:213
 #, python-brace-format
 msgid "{count_videos} video was downloaded!"
 msgstr "{count_videos} video was downloaded!"
 
-#: app.py:168
+#: app.py:239
 msgid "Sending the videos!"
 msgstr "Sending the videos!"
 
-#: app.py:188
+#: app.py:263
 #, python-brace-format
 msgid ""
 "No urls! Nothing to download...For download write a url to video from "
@@ -67,7 +72,7 @@ msgstr ""
 "No urls! Nothing to download...For download write a url to video from "
 "available platforms ({available_platforms})!"
 
-#: app.py:193
+#: app.py:268
 msgid "For download video send a url here!"
 msgstr "For download video send a url here!"
 

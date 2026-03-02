@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-03-02 14:19+0300\n"
+"POT-Creation-Date: 2026-03-02 23:25+0300\n"
 "PO-Revision-Date: 2026-02-26 16:54+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -18,20 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.18.0\n"
 
-#: app.py:34
-msgid "Something went wrong...We send msg to admin, try later!"
-msgstr "「何かがうまくいかなかった。..私たちは、管理者にmsgを送信し、後で試してみてください！"
-
-#: app.py:35
-#, python-brace-format
-msgid ""
-"Something went wrong at {error_situation} at time {date_and_time}. Check "
-"logs for more information!"
-msgstr ""
-"「時間{date_and_time}の{error_situation}で何かが間違っていました。 チェック"
-"より多くの情報のためのログ！"
-
-#: app.py:99
+#: app.py:130
 #, python-brace-format
 msgid ""
 "Hello, {name}! This is app for downloading any video from TikTok and "
@@ -40,23 +27,39 @@ msgstr ""
 "こんにちは,{name}! これはTikTokからビデオをダウンロードするためのアプリです ユーチューブ。 "
 "ダウンロード用のビデオへのurlリンクを書き留めてください！"
 
-#: app.py:119
+#: app.py:154
 #, fuzzy, python-brace-format
 msgid ""
 "We would be able to get the {count_urls} URLs from your message. We're "
 "starting to download them..."
 msgstr "「メッセージから {count_urls} Urlを取得できます。 私たちはそれらをダウンロードし始めます。.."
 
-#: app.py:147
+#: app.py:159 app.py:219
+msgid "Something went wrong...We send msg to admin, try later!"
+msgstr "「何かがうまくいかなかった。..私たちは、管理者にmsgを送信し、後で試してみてください！"
+
+#: app.py:162 app.py:222 app.py:254
+#, python-brace-format
+msgid ""
+"Something went wrong at {error_situation} at time {date_and_time}. Check "
+"logs for more information!"
+msgstr "「時間{date_and_time}の{error_situation}で何かが間違っていました。 チェックより多くの情報のためのログ！"
+
+#: app.py:190
+#, python-brace-format
+msgid "Video {video_id} is too big for sending back to you!"
+msgstr "ビデオ {video_id} はあなたに送り返すには大きすぎます！"
+
+#: app.py:213
 #, python-brace-format
 msgid "{count_videos} video was downloaded!"
 msgstr "{count_videos} ビデオがダウンロードされました！"
 
-#: app.py:168
+#: app.py:239
 msgid "Sending the videos!"
 msgstr "動画を送る！"
 
-#: app.py:188
+#: app.py:263
 #, python-brace-format
 msgid ""
 "No urls! Nothing to download...For download write a url to video from "
@@ -65,7 +68,7 @@ msgstr ""
 "「Urlはありません！ "
 "ダウンロードするものは何もありません。..から動画へのurlをダウンロードするために、利用可能なプラットフォーム（{available_platforms}）！"
 
-#: app.py:193
+#: app.py:268
 msgid "For download video send a url here!"
 msgstr "ダウンロードビデオのためにここにurlを送信！"
 

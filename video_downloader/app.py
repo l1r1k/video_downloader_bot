@@ -17,7 +17,12 @@ from aiogram.utils.i18n.middleware import SimpleI18nMiddleware
 # ENV dependencies
 from decouple import config
 # Install function
-from download_video import download_video_async, get_video_id, correct_video
+from download_video import (
+    download_video_async,
+    get_video_id,
+    correct_video,
+    check_video_size
+)
 # Localfiles dependencies
 from check_dependencies import check
 # Custom exceptions
@@ -30,6 +35,7 @@ PATH_TO_COOKIES = config('PATH_TO_COOKIES', default=None) # Path to cookies for 
 # Available platforms and path to dir
 PLATFORMS = {
     'youtube': 'youtube_videos',
+    'youtu': 'youtube_videos',
     'tiktok': 'tiktok_videos',
     'instagram': 'inst_reels_videos',
     'twitch': 'twitch_videos'
@@ -169,10 +175,23 @@ async def any_message_handler(message: Message) -> None:
                 if path_to_save:
                     if 'instagram' in download_url:
                         video_id, stdout_video_id, stderror_video_id = await get_video_id(download_url, PATH_TO_COOKIES)
+                        is_available_to_send_back, stdout_check_video_size, stderror_check_video_size = await check_video_size(download_url, PATH_TO_COOKIES)
                     else:
                         video_id, stdout_video_id, stderror_video_id = await get_video_id(download_url, None)
+                        is_available_to_send_back, stdout_check_video_size, stderror_check_video_size = await check_video_size(download_url)
+                   
+                    logging.info(stdout_check_video_size)
+                    logging.error(stderror_check_video_size)
                     logging.info(stdout_video_id)
                     logging.error(stderror_video_id)
+                    
+                    if not is_available_to_send_back and not no_send_back_type:
+                        await message.answer(
+                            _('Video {video_id} is too big for sending back to you!')
+                            .format(video_id=video_id)
+                        )
+                        continue
+
                     path_to_video = f'{path_to_save}/{video_id}.mp4'
                     if not os.path.exists(path_to_video):
                         # If downloading video from Instagram Reels - add a path to cookies, else download without them

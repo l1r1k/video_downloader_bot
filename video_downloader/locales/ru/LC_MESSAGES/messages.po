@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-03-02 14:19+0300\n"
+"POT-Creation-Date: 2026-03-02 23:25+0300\n"
 "PO-Revision-Date: 2026-02-26 16:48+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -19,20 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.18.0\n"
 
-#: app.py:34
-msgid "Something went wrong...We send msg to admin, try later!"
-msgstr "Что-то пошло не так...Мы уже отправили сообщение администратору, попробуйте позже!"
-
-#: app.py:35
-#, python-brace-format
-msgid ""
-"Something went wrong at {error_situation} at time {date_and_time}. Check "
-"logs for more information!"
-msgstr ""
-"Что-то пошло не так в {error_situation} во время {date_and_time}. Посмотрите "
-"логи для подробной информации!"
-
-#: app.py:99
+#: app.py:130
 #, python-brace-format
 msgid ""
 "Hello, {name}! This is app for downloading any video from TikTok and "
@@ -41,7 +28,7 @@ msgstr ""
 "Привет, {name}! Это приложение для установки любых видео с TikTok и "
 "YouTube. Напиши url-ссылку на видео ниже для его установки!"
 
-#: app.py:119
+#: app.py:154
 #, python-brace-format
 msgid ""
 "We would be able to get the {count_urls} URLs from your message. We're "
@@ -50,16 +37,36 @@ msgstr ""
 "Мы смогли получить {count_urls} URL-адреса из вашего сообщения. Мы "
 "начинаем их загружать..."
 
-#: app.py:147
+#: app.py:159 app.py:219
+msgid "Something went wrong...We send msg to admin, try later!"
+msgstr ""
+"Что-то пошло не так...Мы уже отправили сообщение администратору, "
+"попробуйте позже!"
+
+#: app.py:162 app.py:222 app.py:254
+#, python-brace-format
+msgid ""
+"Something went wrong at {error_situation} at time {date_and_time}. Check "
+"logs for more information!"
+msgstr ""
+"Что-то пошло не так в {error_situation} во время {date_and_time}. "
+"Посмотрите логи для подробной информации!"
+
+#: app.py:190
+#, python-brace-format
+msgid "Video {video_id} is too big for sending back to you!"
+msgstr "Видео {video_id} слишком большое, чтобы мы могли его отправить тебе!"
+
+#: app.py:213
 #, python-brace-format
 msgid "{count_videos} video was downloaded!"
 msgstr "{count_videos} видео было скачано!"
 
-#: app.py:168
+#: app.py:239
 msgid "Sending the videos!"
 msgstr "Отправляем видео!"
 
-#: app.py:188
+#: app.py:263
 #, python-brace-format
 msgid ""
 "No urls! Nothing to download...For download write a url to video from "
@@ -68,7 +75,7 @@ msgstr ""
 "Нет URL-адресов! Скачивать нечего...Для скачивания введите URL-адрес "
 "видео с доступных платформ ({available_platforms})!"
 
-#: app.py:193
+#: app.py:268
 msgid "For download video send a url here!"
 msgstr "Отправьте url для скачивания видео!"
 

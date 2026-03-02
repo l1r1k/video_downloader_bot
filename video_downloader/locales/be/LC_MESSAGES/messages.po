@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-03-02 14:19+0300\n"
+"POT-Creation-Date: 2026-03-02 23:25+0300\n"
 "PO-Revision-Date: 2026-02-26 16:50+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: be\n"
@@ -19,20 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.18.0\n"
 
-#: app.py:34
-msgid "Something went wrong...We send msg to admin, try later!"
-msgstr "Нешта пайшло не так...Мы адпраўляем паведамленне адміністратару, паспрабуйце пазней!"
-
-#: app.py:35
-#, python-brace-format
-msgid ""
-"Something went wrong at {error_situation} at time {date_and_time}. Check "
-"logs for more information!"
-msgstr ""
-"Нешта пайшло не так у {error_situation} у момант часу {date_and_time}. Праверыць "
-"часопісы для атрымання дадатковай інфармацыі!"
-
-#: app.py:99
+#: app.py:130
 #, python-brace-format
 msgid ""
 "Hello, {name}! This is app for downloading any video from TikTok and "
@@ -41,7 +28,7 @@ msgstr ""
 "Добры дзень, {name}! Гэта дадатак для загрузкі любога відэа з TikTok і "
 "YouTube. Запішыце URL-спасылку на відэа для запампоўкі!"
 
-#: app.py:119
+#: app.py:154
 #, fuzzy, python-brace-format
 msgid ""
 "We would be able to get the {count_urls} URLs from your message. We're "
@@ -50,16 +37,36 @@ msgstr ""
 "Мы маглі б атрымаць {count_urls} URL-адрасы з вашага паведамлення. Мы "
 "пачынаем іх загружаць..."
 
-#: app.py:147
+#: app.py:159 app.py:219
+msgid "Something went wrong...We send msg to admin, try later!"
+msgstr ""
+"Нешта пайшло не так...Мы адпраўляем паведамленне адміністратару, "
+"паспрабуйце пазней!"
+
+#: app.py:162 app.py:222 app.py:254
+#, python-brace-format
+msgid ""
+"Something went wrong at {error_situation} at time {date_and_time}. Check "
+"logs for more information!"
+msgstr ""
+"Нешта пайшло не так у {error_situation} у момант часу {date_and_time}. "
+"Праверыць часопісы для атрымання дадатковай інфармацыі!"
+
+#: app.py:190
+#, python-brace-format
+msgid "Video {video_id} is too big for sending back to you!"
+msgstr "Відэа {video_id} занадта вялікае для адпраўкі вам назад!"
+
+#: app.py:213
 #, python-brace-format
 msgid "{count_videos} video was downloaded!"
 msgstr "відэа{count_videos} было загружана!"
 
-#: app.py:168
+#: app.py:239
 msgid "Sending the videos!"
 msgstr "Адпраўляю відэа!"
 
-#: app.py:188
+#: app.py:263
 #, python-brace-format
 msgid ""
 "No urls! Nothing to download...For download write a url to video from "
@@ -68,7 +75,7 @@ msgstr ""
 "Няма URL-адрасоў! Спампоўваць няма чаго...Для запампоўкі увядзіце "
 "URL-адрас Відэа з даступныя платформы ({available_platforms})!"
 
-#: app.py:193
+#: app.py:268
 msgid "For download video send a url here!"
 msgstr "Каб загрузіць відэа, адпраўце URL сюды!"
 

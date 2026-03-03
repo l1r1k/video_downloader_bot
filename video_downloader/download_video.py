@@ -30,13 +30,16 @@ async def get_video_id(url: str, path_to_cookies: str = None) -> tuple[str, str,
     video_id = stdout_str[:stdout_str.find(':')].split(' ')[-1]
     return video_id, stdout.decode(), stderror
 
-async def check_video_size(url: str) -> tuple[bool, str, str]:
+async def check_video_size(url: str, path_to_cookies: str = None) -> tuple[bool, str, str]:
     """
     Function for checking video size. If vide size is less than MAX_SIZE, than it will return True, else return False.
     Because Telegram Bot API has a limit of 50 MB for sending video files, so if video is bigger than 50 MB, if user 
     select save and no_sending_back option, video will be downloaded and saved on local folders
     """
-    proc = await asyncio.create_subprocess_exec(COMMAND, '--print', 'filesize', url, stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE)
+    if path_to_cookies is None:
+        proc = await asyncio.create_subprocess_exec(COMMAND, '--print', 'filesize', url, stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE)
+    else:
+        proc = await asyncio.create_subprocess_exec(COMMAND, COOKIES_KEY, path_to_cookies, '--print', 'filesize', url, stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE)
     stdout, stderror = await proc.communicate()
     stdout_value = stdout.decode().strip()
     if stdout_value.isdigit():
